@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111;
+  color: white;
+  padding-top: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.logo {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+/* HERO */
+header {
+  min-height: 100vh;
+  background: linear-gradient(to right, #111, #2a2a2a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+
+.hero {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero h3 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid red;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid red;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: red;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+section h2 {
+  color: red;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARDS */
+.card {
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  min-height: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.card h3 {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* FOOTER */
+footer {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #1a1a1a, #2d2d2d);
+}
+
+footer h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  border: 2px solid red;
+  color: white;
+  text-align: center;
+  position: relative; /* important for close button */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
