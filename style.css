@@ -1,6 +1,6 @@
 /* ===== ROOT VARIABLES ===== */
 :root {
-  --red: #00f320;
+  --green: #00f320;
   --red-dim: rgba(47, 255, 47, 0.15);
   --red-glow: rgba(131, 245, 0, 0.35);
   --black: #0a0a0a;
@@ -1120,3 +1120,5 @@ footer {
     max-height: 60vh; /* smaller screens */
   }
 }
+
+
